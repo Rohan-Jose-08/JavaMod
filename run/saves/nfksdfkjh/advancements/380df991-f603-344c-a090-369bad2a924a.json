@@ -1,0 +1,39 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2023-09-03 10:29:28 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_slopes": "2023-09-03 10:29:38 +0100",
+      "minecraft:taiga": "2023-09-03 10:31:58 +0100",
+      "minecraft:deep_ocean": "2023-09-03 10:34:40 +0100",
+      "minecraft:frozen_river": "2023-09-03 10:30:14 +0100",
+      "minecraft:beach": "2023-09-03 10:32:01 +0100",
+      "minecraft:sparse_jungle": "2023-09-03 10:34:56 +0100",
+      "minecraft:lukewarm_ocean": "2023-09-03 10:35:09 +0100",
+      "minecraft:river": "2023-09-03 10:30:42 +0100",
+      "minecraft:snowy_plains": "2023-09-03 10:29:41 +0100",
+      "minecraft:stony_shore": "2023-09-03 10:30:01 +0100",
+      "minecraft:dripstone_caves": "2023-09-03 10:32:54 +0100",
+      "minecraft:snowy_taiga": "2023-09-03 10:31:02 +0100",
+      "minecraft:grove": "2023-09-03 10:33:34 +0100",
+      "minecraft:cold_ocean": "2023-09-03 10:30:50 +0100",
+      "minecraft:forest": "2023-09-03 10:30:56 +0100",
+      "minecraft:lush_caves": "2023-09-03 10:33:16 +0100",
+      "minecraft:deep_cold_ocean": "2023-09-03 10:35:55 +0100",
+      "minecraft:ice_spikes": "2023-09-03 10:29:32 +0100",
+      "minecraft:frozen_ocean": "2023-09-03 10:29:29 +0100",
+      "minecraft:deep_frozen_ocean": "2023-09-03 10:29:46 +0100",
+      "minecraft:ocean": "2023-09-03 10:34:41 +0100",
+      "minecraft:old_growth_spruce_taiga": "2023-09-03 10:32:44 +0100",
+      "minecraft:snowy_beach": "2023-09-03 10:30:12 +0100",
+      "minecraft:deep_lukewarm_ocean": "2023-09-03 10:34:52 +0100",
+      "minecraft:plains": "2023-09-03 10:30:31 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}

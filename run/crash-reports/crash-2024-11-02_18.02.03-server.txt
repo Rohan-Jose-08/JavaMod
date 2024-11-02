@@ -1,0 +1,141 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2024-11-02 18:02:03
+Description: Exception initializing level
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.server.MinecraftServer.getAllLevels()" because "net.minecraft.world.level.levelgen.synth.PerlinNoise.testmod$minecraftServer" is null
+	at net.minecraft.world.level.levelgen.synth.PerlinNoise.wrap(PerlinNoise.java:535) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:tutorialmod.mixin.json:PerlinNoiseMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.synth.PerlinNoise.getValue(PerlinNoise.java:163) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:tutorialmod.mixin.json:PerlinNoiseMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.synth.PerlinNoise.getValue(PerlinNoise.java:150) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:tutorialmod.mixin.json:PerlinNoiseMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.synth.NormalNoise.getValue(NormalNoise.java:84) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunction$NoiseHolder.getValue(DensityFunction.java:91) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$ShiftNoise.compute(DensityFunctions.java:951) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$ShiftA.compute(DensityFunctions.java:903) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$ShiftedNoise.compute(DensityFunctions.java:966) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$Sampler.sample(Climate.java:418) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$SpawnFinder.getSpawnPositionAndFitness(Climate.java:461) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$SpawnFinder.<init>(Climate.java:430) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate.findSpawnPosition(Climate.java:58) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$Sampler.findSpawnPosition(Climate.java:422) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.setInitialSpawn(MinecraftServer.java:396) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.createLevels(MinecraftServer.java:349) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:311) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:66) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:652) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.level.levelgen.synth.PerlinNoise.wrap(PerlinNoise.java:535) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:tutorialmod.mixin.json:PerlinNoiseMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.synth.PerlinNoise.getValue(PerlinNoise.java:163) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:tutorialmod.mixin.json:PerlinNoiseMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.synth.PerlinNoise.getValue(PerlinNoise.java:150) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:mixin,re:classloading,pl:mixin:APP:tutorialmod.mixin.json:PerlinNoiseMixin,pl:mixin:A}
+	at net.minecraft.world.level.levelgen.synth.NormalNoise.getValue(NormalNoise.java:84) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunction$NoiseHolder.getValue(DensityFunction.java:91) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$ShiftNoise.compute(DensityFunctions.java:951) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$ShiftA.compute(DensityFunctions.java:903) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.levelgen.DensityFunctions$ShiftedNoise.compute(DensityFunctions.java:966) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$Sampler.sample(Climate.java:418) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$SpawnFinder.getSpawnPositionAndFitness(Climate.java:461) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$SpawnFinder.<init>(Climate.java:430) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate.findSpawnPosition(Climate.java:58) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.level.biome.Climate$Sampler.findSpawnPosition(Climate.java:422) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.setInitialSpawn(MinecraftServer.java:396) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+-- Affected level --
+Details:
+	All players: 0 total; []
+	Chunk stats: 0
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,0,0), Section: (at 0,0,0 in 0,0,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 0 game time, 0 day time
+	Level name: more broke
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Known server brands: forge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.createLevels(MinecraftServer.java:349) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:311) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:66) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:652) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.13, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 1012091392 bytes (965 MiB) / 1509949440 bytes (1440 MiB) up to 4282384384 bytes (4084 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 2600 Six-Core Processor            
+	Identifier: AuthenticAMD Family 23 Model 8 Stepping 2
+	Microarchitecture: Zen+
+	Frequency (GHz): 3.39
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1060 6GB
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1c03
+	Graphics card #0 versionInfo: DriverVersion=32.0.15.6076
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 23501.78
+	Virtual memory used (MB): 19459.63
+	Swap memory total (MB): 7168.00
+	Swap memory used (MB): 702.28
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:theoneprobe, mod:forge, mod:tutorialmod, mod:geckolib, mod:jei
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.10+10.0.10+main.22f00f84
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		loader-47.1.47.jar slf4jfixer PLUGINSERVICE 
+		loader-47.1.47.jar object_holder_definalize PLUGINSERVICE 
+		loader-47.1.47.jar runtime_enum_extender PLUGINSERVICE 
+		loader-47.1.47.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		loader-47.1.47.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.10.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.10.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		lowcodefml@47.1
+		minecraft@47.1
+		javafml@47.1
+	Mod List: 
+		forge-1.20.1-47.1.76_mapped_parchment_2023.08.06-1|Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		theoneprobe-1.20.1-10.0.1-3_mapped_parchment_2023.|The One Probe                 |theoneprobe                   |1.20.1-10.0.1-3     |DONE      |Manifest: NOSIGNATURE
+		                                                  |NeoForge                      |forge                         |47.1.76             |DONE      |Manifest: NOSIGNATURE
+		main                                              |Xzier Mod                     |tutorialmod                   |1.1.0               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.2.1_mapped_parchment_2023.|GeckoLib 4                    |geckolib                      |4.2.1               |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.2.0.23_mapped_parchment_2023.0|Just Enough Items             |jei                           |15.2.0.23           |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: bb9a18ec-303e-4150-a532-d2efc2db6a2f
+	FML: 47.1
+	NeoForge: net.neoforged:47.1.76

@@ -1,0 +1,146 @@
+{
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:nether_wastes": "2023-09-03 11:21:15 +0100"
+    },
+    "done": false
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2023-09-03 11:21:15 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_crystal": {
+    "criteria": {
+      "has_ender_eye": "2023-09-03 11:19:39 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2023-09-03 11:21:15 +0100"
+    },
+    "done": true
+  },
+  "minecraft:end/enter_end_gateway": {
+    "criteria": {
+      "entered_end_gateway": "2023-09-03 11:20:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2023-09-03 11:09:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/follow_ender_eye": {
+    "criteria": {
+      "in_stronghold": "2023-09-03 11:19:24 +0100"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2023-09-03 11:19:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_slopes": "2023-09-03 11:12:02 +0100",
+      "minecraft:taiga": "2023-09-03 11:10:22 +0100",
+      "minecraft:deep_ocean": "2023-09-03 11:12:24 +0100",
+      "minecraft:cherry_grove": "2023-09-03 11:13:29 +0100",
+      "minecraft:birch_forest": "2023-09-03 11:12:05 +0100",
+      "minecraft:savanna_plateau": "2023-09-03 11:12:04 +0100",
+      "minecraft:beach": "2023-09-03 11:14:44 +0100",
+      "minecraft:stony_peaks": "2023-09-03 11:12:55 +0100",
+      "minecraft:sparse_jungle": "2023-09-03 11:14:13 +0100",
+      "minecraft:lukewarm_ocean": "2023-09-03 11:13:53 +0100",
+      "minecraft:river": "2023-09-03 11:10:25 +0100",
+      "minecraft:snowy_plains": "2023-09-03 11:10:07 +0100",
+      "minecraft:stony_shore": "2023-09-03 11:11:38 +0100",
+      "minecraft:grove": "2023-09-03 11:18:49 +0100",
+      "minecraft:jagged_peaks": "2023-09-03 11:11:08 +0100",
+      "minecraft:forest": "2023-09-03 11:10:08 +0100",
+      "minecraft:jungle": "2023-09-03 11:12:43 +0100",
+      "minecraft:ocean": "2023-09-03 11:11:37 +0100",
+      "minecraft:deep_lukewarm_ocean": "2023-09-03 11:14:40 +0100",
+      "minecraft:flower_forest": "2023-09-03 11:11:29 +0100",
+      "minecraft:old_growth_birch_forest": "2023-09-03 11:15:12 +0100",
+      "minecraft:meadow": "2023-09-03 11:10:39 +0100",
+      "minecraft:savanna": "2023-09-03 11:12:51 +0100",
+      "minecraft:plains": "2023-09-03 11:10:01 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ender_chest": {
+    "criteria": {
+      "has_ender_eye": "2023-09-03 11:19:39 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2023-09-03 11:14:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2023-09-03 11:19:45 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}
